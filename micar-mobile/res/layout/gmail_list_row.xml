@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <com.micar.component.TextViewCustom
+        android:id="@+id/textview_name"
+        style="@style/text_black_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/checkbox_contact"
+        android:text="@string/from_contact" />
+
+    <CheckBox
+        android:id="@+id/checkbox_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+    <com.micar.component.TextViewCustom
+        android:id="@+id/textview_email"
+        style="@style/text_black_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_name"
+        android:text="@string/from_contact" />
+
+</RelativeLayout>

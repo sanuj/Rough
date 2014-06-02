@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <ImageView
+        android:id="@+id/imageview_contact"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:background="@drawable/ic_contact_picture_holo_light" />
+
+    <!--
+         Use standard android.R class icon id instead of app specific id. This is just useful for
+         consistency. Use scaleType=centerCrop to give a nice full cropped image in the assigned
+         space
+    -->
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageview_contact" >
+
+        <com.micar.component.TextViewCustom
+            android:id="@+id/textview_name"
+            style="@style/text_black_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/checkbox_contact"
+            android:text="@string/from_contact" />
+
+        <com.micar.component.CheckBoxCustom
+            android:id="@+id/checkbox_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+        <com.micar.component.TextViewCustom
+            android:id="@+id/textview_email"
+            style="@style/text_black_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_name"
+            android:text="@string/from_contact" />
+    </RelativeLayout>
+
+</RelativeLayout>

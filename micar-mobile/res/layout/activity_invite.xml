@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/navbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/linear_layout_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/setting_row_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!--
+             <RelativeLayout
+            android:id="@+id/relative_layout_from_contact"
+            style="@style/setting_row_style" > 
+
+           
+            <ImageView
+                android:id="@+id/imageview_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/support" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_from_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageview_contacts"
+                android:orientation="vertical"
+                android:paddingLeft="20dp" >
+                -->
+
+                <com.micar.component.TextViewCustom
+                    android:id="@+id/textview_from_contact"
+                    style="@style/setting_textview_style"
+                    android:drawableLeft="@drawable/support"
+                    android:text="@string/from_contact" />
+
+                <!--
+            <com.micar.component.TextViewCustom
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    style="@style/text_black_style" /> 
+            </LinearLayout>
+           
+        </RelativeLayout>
+                -->
+
+                <TextView style="@style/divider_style" />
+
+                <com.micar.component.TextViewCustom
+                    android:id="@+id/textview_gmail"
+                    style="@style/setting_textview_style"
+                    android:drawableLeft="@drawable/support"
+                    android:text="@string/from_gmail" />
+
+                <TextView style="@style/divider_style" />
+
+                <com.micar.component.TextViewCustom
+                    android:id="@+id/textview_yahoo"
+                    style="@style/setting_textview_style"
+                    android:drawableLeft="@drawable/support"
+                    android:text="@string/from_yahoo" />
+
+                <TextView style="@style/divider_style" />
+
+                <com.micar.component.TextViewCustom
+                    android:id="@+id/textview_entering_email"
+                    style="@style/setting_textview_style"
+                    android:drawableLeft="@drawable/support"
+                    android:text="@string/by_entering_email"
+                    android:textColor="@color/black" />
+
+                <TextView style="@style/divider_style" />
+
+                <com.micar.component.TextViewCustom
+                    android:id="@+id/textview_tweet"
+                    style="@style/setting_textview_style"
+                    android:drawableLeft="@drawable/support"
+                    android:text="@string/tweet_it" />
+
+                <TextView style="@style/divider_style" />
+
+                <com.micar.component.TextViewCustom
+                    android:id="@+id/textview_share_on_fb"
+                    style="@style/setting_textview_style"
+                    android:drawableLeft="@drawable/support"
+                    android:text="@string/share_on_fb" />
+
+                <TextView style="@style/divider_style" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/setting_row_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.micar.component.TextViewCustom
+                        android:id="@+id/user_settings_textViewProfile"
+                        style="@style/text_black_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/micar_money_earned" />
+
+                    <com.micar.component.TextViewCustom
+                        android:id="@+id/textview_earned_money"
+                        style="@style/text_black_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="0.0" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_invited"
+                    style="@style/setting_row_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

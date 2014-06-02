@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_map_header_relativeLyt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/navbar"
+    android:orientation="vertical" >
+
+    <com.micar.component.TextViewCustom
+        android:id="@+id/txtview_setting"
+        style="@style/navbar_style"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/setting_icon" />
+
+    <com.micar.component.TextViewCustom
+        style="@style/navbar_style"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/txtview_profile"
+        android:layout_toRightOf="@+id/txtview_setting"
+        android:text="@string/app_name" />
+
+    <com.micar.component.TextViewCustom
+        android:id="@+id/txtview_profile"
+        style="@style/navbar_style"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/profile_icon" />
+
+</RelativeLayout>

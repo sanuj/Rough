@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.micar.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.micar.activity.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCBEqWJ-t5uqupR9V2ph_D8ZpNeZIh_V_E" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.micar.activity.ActivitySplash"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityLogin"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomActionBar" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityStationsInMap"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivitySetting"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityHelp"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityMyProfile"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityInvite"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityContacts"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityEnterEmail"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityGmailContacts"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityMicarHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomActionBar" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivitySearchedCars"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityFindCarNear"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityOutStandingPayment"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityMiPoints"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomActionBar" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityPreBoughtHrs"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityReferral"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityPhoneContacts"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomActionBar" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityReserveCar"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityCostBreakDown"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityAccessories"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityStates"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityReservationDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomActionBar" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityMakeReservation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomActionBar" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityReservationAlert"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomActionBar" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityStateDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomActionBar" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityCancelReservation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomActionBar" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityReservationModification"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomActionBar" >
+        </activity>
+        <activity
+            android:name="com.micar.activity.ActivityCancellationBreakDown"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomActionBar" >
+        </activity>
+        
+        <activity
+            android:name="com.micar.activity.ActivityActiveReservationDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomActionBar" >
+        </activity>
+
+        <service android:name="com.google.analytics.tracking.android.CampaignTrackingService" />
+
+        <receiver
+            android:name="com.google.analytics.tracking.android.CampaignTrackingReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

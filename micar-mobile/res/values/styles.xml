@@ -1,0 +1,515 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowBackground">@color/background_window</item>
+        <!-- <item name="windowBackground">@color/background_window</item> -->
+        <!-- <item name="android:actionBarStyle">@style/ActionBarStyle</item> -->
+
+    </style>
+
+    <style name="Theme.CustomActionBar" parent="@style/Theme.AppCompat">
+        <item name="actionBarStyle">@style/Widget.Rbt.ActionBar</item>
+        <item name="windowActionBar">true</item>
+    </style>
+
+    <style name="Widget.Rbt.ActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@drawable/actionbar_blue_strip</item> <!-- @color/blue_strip -->
+    </style>
+
+    <style name="activity_style">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="navbar_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="navigation_bar_style">
+        <item name="android:background">@drawable/actionbar_blue_strip</item> <!-- @color/blue_strip -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="navbar_text_style">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!-- Login Screen -->
+    <style name="login_screen_style">
+        <!-- <item name="android:layout_margin">@dimen/activity_vertical_margin</item> -->
+    </style>
+
+    <style name="login_tab_style">
+
+        <!--
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:paddingBottom">2dip</item>
+        -->
+        <item name="android:background">@color/yellow_micar</item>
+    </style>
+
+    <style name="login_blue_stip_style">
+        <item name="android:background">@drawable/login_blue_strip</item> <!-- @color/blue_strip -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="login_heading_style">
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="divider_style">
+        <item name="android:layout_margin">5dip</item>
+    </style>
+
+    <style name="edittext_style">
+        <item name="android:padding">@dimen/edittext_padding</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="remember_me_style">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/blue_txt</item>
+    </style>
+
+    <style name="forgot_password_style">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginBottom">@dimen/fields_margin</item>
+    </style>
+
+    <style name="text_white_style">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="list_row_style">
+        <item name="android:padding">5dip</item>
+    </style>
+
+    <!-- TextView Style -->
+
+    <style name="text_blue_style">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/blue_txt</item>
+    </style>
+
+    <style name="text_red_style">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:padding">5dip</item>
+    </style>
+
+    <style name="text_black_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">5dip</item>
+    </style>
+
+    <!-- Home Screen -->
+
+    <style name="drawer_row_icon_style">
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:layout_marginRight">10dip</item>
+    </style>
+
+    <style name="drawer_row_text_style">
+        <item name="android:textColor">@drawable/drawer_textview_drawable</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Make a booking Screen -->
+
+    <style name="booking_field_style">
+        <item name="android:layout_marginLeft">@dimen/booking_field_vertical_margin</item>
+        <item name="android:layout_marginRight">@dimen/booking_field_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/booking_field_vertical_margin</item>
+    </style>
+
+    <!-- Searched cars Screen -->
+    <style name="yellow_strip_style">
+        <item name="android:background">@color/yellow_micar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="map_btn_style">
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <style name="field_icon_style">
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_marginRight">8dip</item>
+    </style>
+
+    <style name="pick_up_style">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="find_car_btn_style">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">20dip</item>
+        <item name="android:paddingRight">20dip</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+    </style>
+
+    <style name="car_row_style">
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="car_name_text_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/heading_text_size</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="rserv_time_text_style">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="cost_text_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="car_image_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="block_info_style">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+    <style name="block_info_text_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <!-- Find Car Near -->
+
+    <style name="find_car_near_header_style">
+        <item name="android:background">@color/orange</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="find_car_near_header_txt_style">
+        <item name="android:textColor">@color/blue_txt</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="station_name_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/heading_text_size</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Reserve Car Screen -->
+    <style name="reserve_car_field_style">
+        <item name="android:layout_marginLeft">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <style name="reserve_heading_txt_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/heading_text_size</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="reserve_normal_txt_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Active Reservation Screen -->
+
+    <style name="active_reserve_heading_txt_style">
+        <item name="android:textSize">@dimen/heading_text_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="active_reserv_normal_txt_style">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Activity reservation Alert Screen -->
+
+    <style name="activity_reserve_alert_heading_txt_style">
+        <item name="android:textSize">@dimen/heading_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Estimated Cost Screen -->
+
+    <style name="cost_heading_txt_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/heading_text_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="cost_normal_txt_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="cost_row_style">
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <!-- Accessories Screen -->
+
+    <style name="accessories_heading_txt_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/heading_text_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="accessories_normal_txt_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="accessories_row_style">
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <!-- Email Enter Screen -->
+
+    <style name="enter_email_screen">
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- My Account -->
+
+    <style name="my_account_field_style">
+        <item name="android:layout_marginLeft">@dimen/booking_field_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/booking_field_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/booking_field_vertical_margin</item>
+        <item name="android:layout_marginBottom">@dimen/booking_field_vertical_margin</item>
+    </style>
+
+    <style name="my_account_txt_field_style">
+        <item name="android:padding">@dimen/txt_field_padding</item>
+        <item name="android:textColor">@color/grey_txt</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <style name="my_account_label_field_style">
+        <item name="android:padding">@dimen/txt_field_padding</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/heading_text_size</item>
+    </style>
+
+    <style name="my_account_btn_style">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:background">@drawable/blue_btn</item>
+    </style>
+
+    <style name="my_account_table_row_style">
+        <item name="android:layout_marginTop">@dimen/booking_field_table_row_margin</item>
+    </style>
+
+    <style name="my_account_row_txt_style">
+        <item name="android:textColor">@drawable/drawer_textview_drawable</item>
+        <item name="android:textSize">@dimen/heading_text_size</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Referral Screen -->
+
+    <style name="station_name_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="referral_txtfield_heading_style">
+        <item name="android:paddingLeft">@dimen/txt_field_padding</item>
+        <item name="android:paddingRight">@dimen/txt_field_padding</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/heading_text_size</item>
+    </style>
+
+    <style name="referral_txtfield_style">
+        <item name="android:paddingLeft">@dimen/txt_field_padding</item>
+        <item name="android:paddingRight">@dimen/txt_field_padding</item>
+        <item name="android:textColor">@color/grey_txt</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <!-- Accessories Screen -->
+
+    <style name="done_btn_style">
+        <item name="android:layout_marginTop">@dimen/booking_field_vertical_margin</item>
+        <item name="android:layout_marginBottom">@dimen/booking_field_vertical_margin</item>
+    </style>
+
+    <!-- Upcoming Screen -->
+
+    <style name="upcoming_txtfield_heading_style">
+        <item name="android:paddingLeft">@dimen/txt_field_padding</item>
+        <item name="android:paddingRight">@dimen/txt_field_padding</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/heading_text_size</item>
+    </style>
+
+    <style name="upcoming_txtfield_style">
+        <item name="android:paddingLeft">@dimen/txt_field_padding</item>
+        <item name="android:paddingRight">@dimen/txt_field_padding</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <!-- Upcoming Details Screen -->
+
+    <style name="details_txtfield_heading_style">
+        <item name="android:paddingLeft">@dimen/txt_field_padding</item>
+        <item name="android:paddingRight">@dimen/txt_field_padding</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/heading_text_size</item>
+    </style>
+
+    <style name="details_txtfield_style">
+        <item name="android:paddingLeft">@dimen/txt_field_padding</item>
+        <item name="android:paddingRight">@dimen/txt_field_padding</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <!-- Modify Screen -->
+
+    <style name="modify_reserve_field_style">
+        <item name="android:layout_marginLeft">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <style name="modify_reserve_heading_txt_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/heading_text_size</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="modify_reserve_normal_txt_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Setting screen -->
+
+    <style name="setting_row_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:paddingRight">5dip</item>
+    </style>
+
+    <style name="setting_textview_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">20dip</item>
+        <item name="android:padding">5dip</item>
+    </style>
+
+    <style name="divider_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:layout_marginBottom">5dip</item>
+        <item name="android:layout_marginTop">5dip</item>
+    </style>
+
+    <style name="search_image_style">
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:layout_marginRight">10dip</item>
+        <item name="android:layout_marginTop">10dip</item>
+    </style>
+
+    <style name="edittext_search_style">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionSearch</item>
+    </style>
+
+    <!-- Invite Screen -->
+
+    <style name="textview_invited_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:paddingRight">5dip</item>
+    </style>
+
+</resources>

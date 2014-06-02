@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawer_list_drawable"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/image_view_arrow"
+        android:orientation="vertical" >
+
+        <com.micar.component.TextViewCustom
+            android:id="@+id/txtView_reservation_time"
+            style="@style/upcoming_txtfield_heading_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.micar.component.TextViewCustom
+            android:id="@+id/txtView_reservation_day"
+            style="@style/upcoming_txtfield_heading_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9:15 2 March 2014" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_view_arrow"
+        style="@style/upcoming_txtfield_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/arrow" />
+
+</RelativeLayout>

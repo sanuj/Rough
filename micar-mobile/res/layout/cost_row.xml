@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/cost_row_style"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/drawer_list_drawable"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/txtView_cost"
+        android:orientation="vertical" >
+
+        <com.micar.component.TextViewCustom
+            android:id="@+id/txtView_cost_name"
+            style="@style/cost_heading_txt_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ca sjc customer facility charge" />
+
+        <com.micar.component.TextViewCustom
+            android:id="@+id/txtView_time"
+            style="@style/cost_normal_txt_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="19/3/2014, 10-12" />
+    </LinearLayout>
+
+    <com.micar.component.TextViewCustom
+        android:id="@+id/txtView_cost"
+        style="@style/cost_normal_txt_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="$1000" />
+
+</RelativeLayout>

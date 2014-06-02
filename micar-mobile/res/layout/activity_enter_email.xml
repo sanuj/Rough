@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/navigation_bar_style"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.micar.component.TextViewCustom
+            style="@style/navbar_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/enter_email_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.micar.component.TextViewCustom
+            style="@style/setting_textview_style"
+            android:text="@string/enter_frnd_email"
+            android:textColor="@color/black" />
+
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:gravity="center" >
+
+            <com.micar.component.EditTextCustom
+                android:id="@+id/edittext_emails"
+                style="@style/edittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/transparent_edit_text_bg"
+                android:hint="@string/enter_frnd_email_hint"
+                android:imeOptions="actionNone"
+                android:inputType="textEmailAddress"
+                android:singleLine="false" />
+        </LinearLayout>
+
+        <com.micar.component.ButtonCustom
+            android:id="@+id/button_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/login_btn"
+            android:text="@string/Invites" />
+    </LinearLayout>
+
+</LinearLayout>

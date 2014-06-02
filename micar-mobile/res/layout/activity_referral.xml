@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/navigation_bar_style"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.micar.component.TextViewCustom
+            style="@style/navbar_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.micar.component.TextViewCustom
+                style="@style/referral_txtfield_heading_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/spread_the_love" />
+
+            <com.micar.component.TextViewCustom
+                style="@style/referral_txtfield_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/spread_love_msg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.micar.component.TextViewCustom
+                android:id="@+id/txtview_referral_code"
+                style="@style/referral_txtfield_heading_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/share_ref_code" />
+
+            <com.micar.component.TextViewCustom
+                style="@style/referral_txtfield_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/share_ref_code_msg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_lyt_from_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/row_rounded_top_only"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <com.micar.component.TextViewCustom
+            style="@style/referral_txtfield_heading_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageview_arrow"
+            android:text="@string/from_contact"
+            android:textColor="@drawable/drawer_textview_drawable" />
+
+        <ImageView
+            android:id="@+id/imageview_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_lyt_enter_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/imageview_arrow"
+        android:background="@drawable/row_rounded_bottom"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <com.micar.component.TextViewCustom
+            style="@style/referral_txtfield_heading_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/by_entering_email"
+            android:textColor="@drawable/drawer_textview_drawable" />
+
+        <ImageView
+            android:id="@+id/imageview_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow" />
+    </RelativeLayout>
+
+</LinearLayout>

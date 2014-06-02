@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical" >
+
+    <com.micar.component.TextViewCustom
+        android:id="@+id/txtView_hrs_before_reservation"
+        style="@style/cost_normal_txt_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="19/3/2014, 10-12" />
+
+    <com.micar.component.TextViewCustom
+        android:id="@+id/txtView_charge_percentage"
+        style="@style/cost_normal_txt_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="19/3/2014, 10-12" />
+
+    <com.micar.component.TextViewCustom
+        android:id="@+id/txtView_max_hrs_charge"
+        style="@style/cost_normal_txt_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="19/3/2014, 10-12" />
+
+</LinearLayout>

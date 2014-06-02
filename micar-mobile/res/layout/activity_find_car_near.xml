@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/navigation_bar_style"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.micar.component.TextViewCustom
+            style="@style/navbar_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.micar.component.AutoCompleteTextViewCustom
+            android:id="@+id/auto_complete_txtview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/places_hint" />
+
+        <com.micar.component.ButtonCustom
+            android:id="@+id/btn_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:text="@string/current_loction" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_fav_station"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent" >
+   
+
+    <LinearLayout
+        android:id="@+id/linear_header"
+        style="@style/find_car_near_header_style"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical" >
+
+        <com.micar.component.TextViewCustom
+            style="@style/find_car_near_header_txt_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/my_fav_address" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp" >
+
+        <ListView
+            android:id="@+id/listview_fav_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/black"
+            android:dividerHeight="1dp" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_header"
+        style="@style/find_car_near_header_style"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.micar.component.TextViewCustom
+            style="@style/find_car_near_header_txt_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:text="@string/my_station"
+            android:textColor="@color/blue_txt" />
+
+        <com.micar.component.TextViewCustom
+            android:id="@+id/txtView_selected_city"
+            style="@style/find_car_near_header_txt_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_station"
+            android:textColor="@color/blue_txt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/listview_station"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/black"
+            android:dividerHeight="1dp" >
+        </ListView>
+    </LinearLayout>
+     </LinearLayout>
+
+</LinearLayout>

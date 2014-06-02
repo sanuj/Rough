@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linear_layout_row"
+        style="@style/car_row_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageview_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/profile_image_icon" />
+
+            <com.micar.component.TextViewCustom
+                android:id="@+id/textView_car_name"
+                style="@style/car_name_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageview_arrow"
+                android:layout_toRightOf="@+id/imageview_car"
+                android:text="dfjfjld"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/imageview_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/list_arrow" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.micar.component.TextViewCustom
+                style="@style/cost_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dfjfjld" />
+
+            <com.micar.component.TextViewCustom
+                style="@style/cost_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dfjfjld" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_slider_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/linear_slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            style="@style/block_info_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yellow_filled_icon"
+                android:contentDescription="@string/block_info" />
+
+            <com.micar.component.TextViewCustom
+                style="@style/block_info_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_resv" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_filled_icon"
+                android:contentDescription="@string/block_info" />
+
+            <com.micar.component.TextViewCustom
+                style="@style/block_info_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/available" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grey_filled_icon"
+                android:contentDescription="@string/block_info" />
+
+            <com.micar.component.TextViewCustom
+                style="@style/block_info_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/not_available" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

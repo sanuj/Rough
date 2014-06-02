@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:id="@+id/linear_layout_invited"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/textview_status"
+        android:orientation="vertical" >
+
+        <com.micar.component.TextViewCustom
+            android:id="@+id/textview_invited_name"
+            style="@style/textview_invited_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from_contact" />
+
+        <com.micar.component.TextViewCustom
+            android:id="@+id/textview_invited_email"
+            style="@style/textview_invited_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from_contact" />
+    </LinearLayout>
+
+    <com.micar.component.TextViewCustom
+        android:id="@+id/textview_status"
+        style="@style/textview_invited_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/invited" />
+    
+    
+ <TextView style="@style/divider_style" 
+    android:layout_below="@+id/linear_layout_invited"/>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    
+    <!-- Login Screen margins -->
+    <dimen name="edittext_padding">5dp</dimen>
+     <dimen name="fields_margin">10dp</dimen>
+     <dimen name="divider_padding">10dp</dimen>
+     
+     
+     <!-- make booking screen  -->
+     
+     <dimen name="field_padding">5dp</dimen>
+     <dimen name="booking_field_horizontal_margin">15dp</dimen>
+     <dimen name="booking_field_vertical_margin">20dp</dimen>
+     <dimen name="booking_field_table_row_margin">10dp</dimen>
+     
+     <!-- My account Screen -->
+     
+       <dimen name="my_account_field_horizontal_margin">15dp</dimen>
+       <dimen name="my_account_field_vertical_margin">15dp</dimen>
+       <dimen name="txt_field_padding">5dp</dimen>
+       
+       
+       <!--App Text Size -->
+       
+       <dimen name="heading_text_size">18dp</dimen>
+       <dimen name="normal_text_size">16dp</dimen>
+       <dimen name="small_text_size">14dp</dimen>
+       
+       
+       <!-- Upcoming Reservation Screen -->
+       
+       <dimen name="reservation_table_row_margin">10dp</dimen>
+       
+       
+       
+
+</resources>

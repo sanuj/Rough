@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/navigation_bar_style"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.micar.component.TextViewCustom
+            style="@style/navbar_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/modify_reserve_field_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.micar.component.TextViewCustom
+                    style="@style/modify_reserve_heading_txt_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Reservation_details" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/row_rounded_top_only"
+                    android:gravity="center_vertical"
+                    android:padding="10dp" >
+
+                    <com.micar.component.TextViewCustom
+                        android:id="@+id/txtview_label"
+                        style="@style/modify_reserve_normal_txt_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/reservation_id" />
+
+                    <com.micar.component.TextViewCustom
+                        android:id="@+id/txtveiw_station_name"
+                        style="@style/modify_reserve_normal_txt_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/txtview_label"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:text="station name" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/row_middle_bottom_line_only"
+                    android:gravity="center_vertical"
+                    android:padding="10dp" >
+
+                    <com.micar.component.TextViewCustom
+                        android:id="@+id/txtview_label"
+                        style="@style/modify_reserve_normal_txt_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/station" />
+
+                    <com.micar.component.TextViewCustom
+                        android:id="@+id/txtveiw_station_name"
+                        style="@style/modify_reserve_normal_txt_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/txtview_label"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:text="station name" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/row_middle_bottom_line_only"
+                    android:gravity="center_vertical"
+                    android:padding="10dp" >
+
+                    <com.micar.component.TextViewCustom
+                        android:id="@+id/txtview_label"
+                        style="@style/modify_reserve_normal_txt_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/car_type_label" />
+
+                    <com.micar.component.TextViewCustom
+                        android:id="@+id/txtveiw_carname"
+                        style="@style/modify_reserve_normal_txt_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/txtview_label"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:text="@string/car_type" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_lyt_estimated_cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/row_rounded_bottom"
+                    android:gravity="center_vertical"
+                    android:padding="10dp" >
+
+                    <com.micar.component.TextViewCustom
+                        android:id="@+id/txtview_label"
+                        style="@style/modify_reserve_normal_txt_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/estimated_cost_label" />
+
+                    <com.micar.component.TextViewCustom
+                        android:id="@+id/txtveiw_estimated_cost"
+                        style="@style/modify_reserve_normal_txt_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/txtview_label"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:text="@string/car_type" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/modify_reserve_field_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.micar.component.TextViewCustom
+                    style="@style/modify_reserve_heading_txt_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pickup_service" />
+
+                <RelativeLayout
+                    android:id="@+id/relative_lyt_pickup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/row_rounded_top"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:id="@+id/linear_lyt_checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/image_view_arrow"
+                        android:orientation="vertical" >
+
+                        <com.micar.component.CheckBoxCustom
+                            android:id="@+id/checkbox_pickup"
+                            style="@style/modify_reserve_normal_txt_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/checkbox"
+                            android:drawablePadding="5dp"
+                            android:focusable="false"
+                            android:text="@string/pick_up" />
+
+                        <com.micar.component.TextViewCustom
+                            android:id="@+id/txtview_pickup_address"
+                            style="@style/modify_reserve_normal_txt_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Noida Sector 62" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/image_view_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/arrow" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_lyt_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/row_rounded_bottom_only"
+                    android:gravity="center_vertical"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:id="@+id/linear_lyt_checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/image_view_arrow"
+                        android:orientation="vertical" >
+
+                        <com.micar.component.CheckBoxCustom
+                            android:id="@+id/checkbox_delivery"
+                            style="@style/modify_reserve_normal_txt_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/checkbox"
+                            android:drawablePadding="5dp"
+                            android:text="@string/delivery" />
+
+                        <com.micar.component.TextViewCustom
+                            android:id="@+id/txtview_delivery_address"
+                            style="@style/modify_reserve_normal_txt_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Noida Sector 62" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/image_view_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/modify_reserve_field_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.micar.component.TextViewCustom
+                    style="@style/modify_reserve_heading_txt_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pick_up_time" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/row_rounded_single"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <RelativeLayout
+                        android:id="@+id/relative_layout_from_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/date_box"
+                        android:padding="@dimen/field_padding" >
+
+                        <com.micar.component.TextViewCustom
+                            android:id="@+id/textView_from_date"
+                            style="@style/drawer_row_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/imageview_from_date"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:text="dfjlfjldj" />
+
+                        <ImageView
+                            android:id="@+id/imageview_from_date"
+                            style="@style/field_icon_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/date_icon_gery" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_from_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/time_box"
+                        android:padding="@dimen/field_padding" >
+
+                        <com.micar.component.TextViewCustom
+                            android:id="@+id/textView_from_time"
+                            style="@style/drawer_row_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/imageview_from_time"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:text="dfjlfjl" />
+
+                        <ImageView
+                            android:id="@+id/imageview_from_time"
+                            style="@style/field_icon_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/time_icon_grey" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/modify_reserve_field_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.micar.component.TextViewCustom
+                    style="@style/modify_reserve_heading_txt_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_time" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/row_rounded_single"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <RelativeLayout
+                        android:id="@+id/relative_layout_to_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/date_box"
+                        android:padding="@dimen/field_padding" >
+
+                        <com.micar.component.TextViewCustom
+                            android:id="@+id/textView_to_date"
+                            style="@style/modify_reserve_normal_txt_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/imageview_from_date"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:text="dfjlfjldj" />
+
+                        <ImageView
+                            android:id="@+id/imageview_to_date"
+                            style="@style/field_icon_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/date_icon_gery" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_layout_to_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/time_box"
+                        android:padding="@dimen/field_padding" >
+
+                        <com.micar.component.TextViewCustom
+                            android:id="@+id/textView_to_time"
+                            style="@style/modify_reserve_normal_txt_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/imageview_from_time"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:text="dfjlfjl" />
+
+                        <ImageView
+                            android:id="@+id/imageview_to_time"
+                            style="@style/field_icon_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/time_icon_grey" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/modify_reserve_field_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.micar.component.TextViewCustom
+                    style="@style/modify_reserve_heading_txt_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accessories" />
+
+                <RelativeLayout
+                    android:id="@+id/relative_lyt_acessories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/row_rounded_single"
+                    android:gravity="center_vertical"
+                    android:padding="10dp" >
+
+                    <com.micar.component.TextViewCustom
+                        android:id="@+id/txtview_accessories"
+                        style="@style/modify_reserve_normal_txt_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/image_view_arrow"
+                        android:text="@string/accessories_label" />
+
+                    <ImageView
+                        android:id="@+id/image_view_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/modify_reserve_field_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.micar.component.TextViewCustom
+                    style="@style/modify_reserve_heading_txt_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/insurance_claim" />
+
+                <RelativeLayout
+                    android:id="@+id/relative_lyt_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/row_rounded_single"
+                    android:gravity="center_vertical"
+                    android:padding="10dp" >
+
+                    <com.micar.component.CheckBoxCustom
+                        android:id="@+id/checkbox_insurance"
+                        style="@style/modify_reserve_normal_txt_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/checkbox"
+                        android:drawablePadding="5dp"
+                        android:text="@string/insurance_claim" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_lyt_done"
+                style="@style/done_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.micar.component.ButtonCustom
+                    android:id="@+id/btn_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/reserve_btn"
+                    android:padding="15dp"
+                    android:text="@string/done" />
+
+                <com.micar.component.ButtonCustom
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/reserve_btn"
+                    android:padding="15dp"
+                    android:text="@string/cancel" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

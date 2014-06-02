@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linear_lyt_header"
+        style="@style/navigation_bar_style"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.micar.component.TextViewCustom
+            style="@style/navbar_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <com.micar.component.TextViewCustom
+            android:id="@+id/txtview_confirmation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/cancellation_confirm"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_text_size" />
+
+        <com.micar.component.TextViewCustom
+            android:id="@+id/txtview_charge_amnt"
+           android:textColor="@color/black"
+            android:textSize="@dimen/normal_text_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/cancellation_charge" />
+
+        <LinearLayout
+            android:id="@+id/linear_lyt_charges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/row_rounded_single"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <com.micar.component.TextViewCustom
+               android:textColor="@color/black"
+            android:textSize="@dimen/normal_text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/arrow"
+                android:padding="5dp"
+                android:text="@string/view_cancellation_charge" />
+        </LinearLayout>
+
+        <com.micar.component.ButtonCustom
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/reserve_btn"
+            android:padding="15dp"
+            android:text="@string/confirm" />
+    </LinearLayout>
+
+</LinearLayout>

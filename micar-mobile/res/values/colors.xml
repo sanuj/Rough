@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    
+    <color name="background_window">#FF4500</color>
+    <color name="abbackground_col">#FF4500</color>
+    <color name="actionBarText">#FF4500</color>
+    
+   
+   
+    
+    <color name="yellow_micar">#f1a900</color>
+    <color name="blue_txt">#2e008b</color>
+    <color name="grey_txt">#646569</color>
+    <color name="blue_strip">#2d008a</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey_white">#C1C1C1</color>
+    <color name="silver_white">#d2d2d2</color>
+    
+    <color name="grey">#CCCCCC</color>
+    <color name="trans_bg">#a9000000</color>
+    <color name="black">#000000</color>
+    <color name="transparent_dialog_bg">#80000000</color>
+    <color name="trans_75_bg">#C0000000</color>
+    <color name="trans_60_bg">#B2000000</color>
+    <color name="trans_50_bg">#80000000</color>
+    <color name="trans_40_bg">#67000000</color>
+    <color name="app_main_bg">#9A2220</color>
+    <color name="app_main_gradient">#C4402E</color>
+    <color name="trans_white_75_bg">#C0FFFFFF</color>
+    <color name="trans_white_50_bg">#80FFFFFF</color>
+    <color name="trans_white_40_bg">#67FFFFFF</color>
+    <color name="nav_color">#040b15</color>
+    <color name="grey_black">#313133</color>
+    <color name="green">#3ead27</color>
+    <color name="red">#e6092d</color>
+    <color name="blue">#FF092796</color>
+    <color name="purple">#5107db</color>
+    <color name="orange">#FF931E</color>
+    <color name="holo_blue">#FF33B5E5</color>
+    
+     <color name="divider_grey">#8d8f90</color>
+
+</resources>

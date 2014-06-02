@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/include_navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/navbar" />
+
+   
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout_help"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <com.micar.component.TextViewCustom
+                android:id="@+id/textview_invites"
+                style="@style/setting_textview_style"
+                android:drawableLeft="@drawable/support"
+                android:gravity="center_vertical"
+                android:text="@string/Invites"
+                android:textColor="@color/black" />
+
+            <TextView style="@style/divider_style" />
+
+            <com.micar.component.TextViewCustom
+                android:id="@+id/textview_help"
+                style="@style/setting_textview_style"
+                android:drawableLeft="@drawable/support"
+                android:gravity="center_vertical"
+                android:text="@string/help"
+                android:textColor="@color/black" />
+
+            <TextView
+                style="@style/divider_style"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

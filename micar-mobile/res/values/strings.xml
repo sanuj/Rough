@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MiCar</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="menu_array">
+        <item>Member Name</item>
+        <item>Make a Booking</item>
+        <item>Active Reservations</item>
+        <item>MiPoints Booking</item>
+        <item>Upcoming Reservations</item>
+        <item>My Account</item>
+        <item>Sign Out</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string-array name="facebook_array">
+        <item>User Profile</item>
+        <item>Post Message</item>
+        <item>Friends</item>
+        <item>Get Feeds</item>
+        <item>Upload Image</item>
+        <item>Get Albums</item>
+        <item>Update Story</item>
+        <item>Close Dialog</item>
+    </string-array>
+    <string-array name="twitter_array">
+        <item>User Profile</item>
+        <item>Send Tweet</item>
+        <item>Friends</item>
+        <item>Get Feeds</item>
+        <item>Upload Image</item>
+        <item>Get Albums</item>
+        <item>Close Dialog</item>
+    </string-array>
+    <string-array name="linkedin_array">
+        <item>User Profile</item>
+        <item>Post an Update</item>
+        <item>Friends</item>
+        <item>Get Feeds</item>
+        <item>Career</item>
+        <item>Close Dialog</item>
+    </string-array>
+    <string-array name="myspace_array">
+        <item>User Profile</item>
+        <item>Post an Update</item>
+        <item>Friends</item>
+        <item>Close Dialog</item>
+    </string-array>
+    <string-array name="yahoo_array">
+        <item>User Profile</item>
+        <item>Post an Update</item>
+        <item>Friends</item>
+        <item>Close Dialog</item>
+    </string-array>
+    <string-array name="yammer_array">
+        <item>User Profile</item>
+        <item>Post an Update</item>
+        <item>Contacts</item>
+        <item>Close Dialog</item>
+    </string-array>
+    <string-array name="foursquare_array">
+        <item>User Profile</item>
+        <item>Contacts</item>
+        <item>Close Dialog</item>
+    </string-array>
+    <string-array name="google_array">
+        <item>User Profile</item>
+        <item>Friends</item>
+        <item>Close Dialog</item>
+    </string-array>
+    <string-array name="salesforce_array">
+        <item>User Profile</item>
+        <item>Close Dialog</item>
+    </string-array>
+    <string-array name="runkeeper_array">
+        <item>User Profile</item>
+        <item>Close Dialog</item>
+    </string-array>
+    <string-array name="googleplus_array">
+        <item>User Profile</item>
+        <item>Close Dialog</item>
+    </string-array>
+    <string-array name="drawable_array">
+        <item>share</item>
+        <item>profile</item>
+        <item>contacts</item>
+        <item>feeds</item>
+        <item>image</item>
+        <item>albums</item>
+        <item>notepad</item>
+        <item>close</item>
+    </string-array>
+
+    <!-- Dialog Message -->
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="alert_dialog_setting">Settings</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="network_nt_avail">Network not available</string>
+    <string name="email_required">Email and password required</string>
+    <string name="invalid_email">Invalid email address</string>
+    <string name="no_internet_msg">You do not seem to be connected to the internet. Please check your Settings and try again.</string>
+    <string name="no_internet_title">No internet</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_email_msg">Please enter your email to reset password</string>
+    <string name="error_title">Error</string>
+    <string name="error_msg">Something went wrong, Please try again</string>
+    <string name="email_sent_title">Email sent</string>
+    <string name="email_sent_msg">An email with reset password link has been sent to %1$s, Please check your mail.</string>
+    <string name="not_register_title">Not registered</string>
+    <string name="not_register_msg">Your email %1$s is not registered with MiCar</string>
+    <string name="getting_address">Getting address...</string>
+    <string name="no_location_title">No location access</string>
+    <string name="no_location_msg">Please allow MiCar to access your location. Turn it ON from Location Service</string>
+    <string name="select_contact_title">Select a contact</string>
+    <string name="select_contact_msg">Select one or more contacts to invite.</string>
+    <string name="invited_title">Invited to MiCar!</string>
+    <string name="invited_msg">We have sent the invitation request to %1$s</string>
+    <string name="email_xceed_msg">Can not invite more than 10 friends. </string>
+    <string name="sms_xceed_msg">Can not send message more than 3 friends at a time. </string>
+    <string name="xceed_title">Limit Exceeded</string>
+    <string name="date_time_title">Pick Date Time</string>
+    <string name="invalid_start_time_title">Invalid start time</string>
+    <string name="invalid_start_time_msg">Please make sure that start time is after atleast an hour from now</string>
+    <string name="invalid_end_time_title">Invalid end time</string>
+    <string name="invalid_end_time_msg">Please make sure that end time is after atleast an hour from now</string>
+
+    <!-- Login Screen -->
+    <string name="email_address">Username</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Keep me logged in</string>
+    <string name="forgot_password"><u>Forgot your Password?</u></string>
+    <string name="forgot_password">&lt;u>Forgot your Password?&lt;/u></string>
+    <string name="registration_info">For membership registration &amp; other details, please log in to our official website:&lt;a href="http://www.micar.co.in"&gt;www.micar.co.in&lt;/a&gt; </string>
+    <string name="copyright_text">© Micar India, All rights reserved, 2014</string>
+    <string name="login">LOGIN</string>
+    <string name="forgot_password_text">Forgot Password</string>
+    <string name="what_micar">What\'s MiCar</string>
+    <string name="plans_rates">Plan&amp;Rates</string>
+    <string name="why">Why?</string>
+    <string name="how">How?</string>
+    <string name="login_heading">Login to your Account</string>
+
+    <!-- Home Screen -->
+
+    <string name="address_not_found">Address not found</string>
+
+    <!-- make my booking Screen -->
+    <string name="pick_up">Pick up</string>
+    <string name="delivery">Delivery</string>
+    <string name="find_car">Find Cars</string>
+    <string name="car_type">Car Type</string>
+    <string name="find_car_near">Find cars near</string>
+    <string name="select_city">Select city</string>
+    <string name="block_info">block info</string>
+    <string name="no_address_found">No address found for location</string>
+
+    <!-- Active reservation -->
+    <string name="share_msg">Share and earn extra MiPoints.</string>
+    <string name="checkin">Checkin</string>
+    <string name="no_active_reserve">You have no active reservation.</string>
+
+    <!-- Active Reservation Detail -->
+    <string name="reservation_id">Reservation Id:</string>
+    <string name="reservation_for">Reservation For:</string>
+    <string name="expected_start_date">Expected start date:</string>
+    <string name="expected_end_date">Expected end date:</string>
+    <string name="expected_end_time">Expected end time:</string>
+    <string name="actual_start_date">Actual start date:</string>
+    <string name="end_reservation">End</string>
+     <string name="extend_reservation">Extend</string>
+
+    <!-- Searched cars Screen -->
+    <string name="list_label">List</string>
+    <string name="map_label">Map</string>
+    <string name="your_resv">Your Reservation</string>
+    <string name="available">Available</string>
+    <string name="not_available">Not Available</string>
+
+    <!-- Find Car near -->
+    <string name="places_hint">Search a location</string>
+    <string name="current_loction">Pick current location</string>
+    <!-- Latitude, longitude format -->
+    <string name="latitude_longitude">%1$.8f, %2$.8f</string>
+    <!-- Address format -->
+    <string name="address_output_string">%1$s %2$s %3$s %4$s</string>
+    <string name="my_fav_address">My Favourite Address</string>
+    <string name="my_station">Stations:</string>
+
+    <!-- My account -->
+    <string name="outstanding_payment">Outstanding Payments</string>
+    <string name="pay">Pay</string>
+    <string name="pre_bought_hrs">Pre Bought Hours</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="pre_bought_hrs_left">Pre Bought Hours Left</string>
+    <string name="including_msg">(Including the carry over Pre Bought Hours)</string>
+    <string name="mi_points">My Points</string>
+    <string name="total">Total</string>
+    <string name="earned">Earned</string>
+    <string name="burned">Burned</string>
+
+    <!-- Reserve Screen -->
+    <string name="car_type_label">Car Type:</string>
+    <string name="estimated_cost_label">Estimated Cost:</string>
+    <string name="time_label">When:</string>
+    <string name="location_label">Location</string>
+    <string name="reserve">Reserve</string>
+    <string name="pickup_service">Pickup and Delivery Service</string>
+    <string name="accessories">Accessories</string>
+    <string name="insurance_claim">Insurance Claim</string>
+    <string name="accessories_label">Accessories:</string>
+    <string name="permited_state">Permited States</string>
+    <string name="states_label">States:</string>
+
+    <!-- Upcoming reservation -->
+    <string name="no_upcoming_reservation">You have no upcoming Reservation.</string>
+
+    <!-- Upcoming Reservation Details -->
+    <string name="city">City:</string>
+    <string name="start_time">Start time:</string>
+    <string name="End_time">End time:</string>
+    <string name="pick_up_address">Pick up Address:</string>
+    <string name="delivery_address">Delivery Address:</string>
+    <string name="km_rate">Kilometer rate:</string>
+    <string name="insurance">Insurace:</string>
+    <string name="cancel">Cancel</string>
+    <string name="Modify">Modify</string>
+    <string name="canel_reservation_title">Cancel</string>
+    <string name="canel_reservation_msg">Are you sure you want to cancel?</string>
+
+    <!-- Reservation Modification Screen -->
+    <string name="pick_up_time">Pick up time</string>
+    <string name="delivery_time">Delivery time</string>
+    <string name="done">Done</string>
+    <string name="Reservation_details">Details</string>
+    <string name="station">Station:</string>
+    <string name="reservation_id">Reservation Id:</string>
+
+    <!-- Accessories Screen -->
+    <string name="done">Done</string>
+
+    <!-- Setting Screen -->
+
+    <string name="help">Help</string>
+    <string name="call_micar">Call MiCar service center</string>
+    <string name="email_micar">Email MiCar</string>
+    <string name="Invites">Invites</string>
+
+    <!-- Invite Friends -->
+
+    <string name="from_contact">From Phone Contacts</string>
+    <string name="from_yahoo">From Yahoo Contacts</string>
+    <string name="from_gmail">From Gmail Contacts</string>
+    <string name="by_entering_email">By entering email</string>
+    <string name="tweet_it">Tweet it</string>
+    <string name="share_on_fb">Share on Facebook</string>
+    <string name="micar_money_earned">My car money earned</string>
+    <string name="invited">invited</string>
+
+    <!-- contacts Screen -->
+
+    <string name="phone_contact">Phone Contacts</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="invite">Invite</string>
+    <string name="Send">Send</string>
+
+    <!-- Enter email Screen -->
+    <string name="enter_frnd_email">Enter your friend\'s email</string>
+    <string name="enter_frnd_email_hint">Use comma to separate multiple email \n addresses</string>
+    <string name="spread_the_love">Spread the love</string>
+    <string name="spread_love_msg">Love our service? Invite friends.</string>
+    <string name="share_ref_code">Share your referral code: %1$s</string>
+    <string name="share_ref_code_msg">Friend earns Rs 200. The take a ride, you earn Rs 200.</string>
+
+    <!--
+          Used for the AlphabetIndexer in ContactsListFragment to provide quick navigation by
+         alphabet using ListView fast scroll.
+    -->
+    <string name="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <!--
+         When using ContactsContract.Contacts#CONTENT_FILTER_URI to search contacts, a match occurs
+         when using a number of different fields, such as name, e-mail address, address, phone
+         number, etc. When a match occurs that is not the name, there is currently no way to tell
+         which other field was matched. This string is displayed in the secondary display text in
+         ContactsListFragment when a search query match occurs that is not the display name.
+    -->
+    <string name="search_match_other">Matches Other Field</string>
+    <string name="no_address">No addresses found</string>
+
+    <!-- My Profile -->
+    <string name="sign_out">Sign out</string>
+
+    <!-- Enter email Screen -->
+    <string name="enter_frnd_email">Enter your friend\'s email</string>
+    <string name="enter_frnd_email_hint">Use comma to separate multiple email \n addresses</string>
+    <string name="invite">Invite</string>
+
+    <!-- Save Address Screen -->
+    <string name="address_name">Name</string>
+    <string name="address">Address</string>
+    <string name="preffered_address">Preffered Address</string>
+
+    <!-- Cancel Reservation -->
+
+    <string name="confirm">Confirm</string>
+    <string name="cancellation_confirm">Are you sure you want to cancel %1$s this reservation.</string>
+    <string name="cancellation_charge"> %1$s cancellation charge will be apply.</string>
+    <string name="view_cancellation_charge"> View Cancellation charge</string>
+
+</resources>

@@ -1,0 +1,378 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/booking_field_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioGroup
+                    android:id="@+id/radio_member_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_myself"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:checked="true"
+                        android:text="Myself"
+                        android:textColor="@color/black"
+                        android:visibility="visible" />
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_guest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="Myself"
+                        android:textColor="@color/black"
+                        android:visibility="invisible" />
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_driver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Myself"
+                        android:textColor="@color/black"
+                        android:visibility="invisible" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <RelativeLayout
+                style="@style/booking_field_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/yellow_micar"
+                android:padding="@dimen/field_padding" >
+
+                <ImageView
+                    android:id="@+id/imageview_car_type"
+                    style="@style/field_icon_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/city_icon" />
+
+                <com.micar.component.TextViewCustom
+                    android:id="@+id/textView_city_name"
+                    style="@style/drawer_row_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/imageview_drop_down"
+                    android:layout_toRightOf="@+id/imageview_car_type"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:text="@string/select_city" />
+
+                <ImageView
+                    android:id="@+id/imageview_drop_down"
+                    style="@style/field_icon_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/down_arrow_bg" />
+
+                <Spinner
+                    android:id="@+id/spinner_city"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/booking_field_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/yellow_micar"
+                android:padding="@dimen/field_padding" >
+
+                <ImageView
+                    android:id="@+id/imageview_city"
+                    style="@style/field_icon_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/car_type_icon" />
+
+                <com.micar.component.TextViewCustom
+                    android:id="@+id/textview_car_type"
+                    style="@style/drawer_row_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/imageview_drop_down"
+                    android:layout_toRightOf="@+id/imageview_city"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:text="@string/car_type" />
+
+                <ImageView
+                    android:id="@+id/imageview_drop_down"
+                    style="@style/field_icon_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/down_arrow_bg" />
+
+                <Spinner
+                    android:id="@+id/spinner_car_type"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_lyt_find_car_near"
+                style="@style/booking_field_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/yellow_micar"
+                android:padding="@dimen/field_padding" >
+
+                <ImageView
+                    android:id="@+id/imageview_find_car"
+                    style="@style/field_icon_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/find_car_icon" />
+
+                <com.micar.component.TextViewCustom
+                    android:id="@+id/textView_find_car_near"
+                    style="@style/drawer_row_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/imageview_search"
+                    android:layout_toRightOf="@+id/imageview_find_car"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:text="@string/find_car_near" />
+
+                <ImageView
+                    android:id="@+id/imageview_search"
+                    style="@style/field_icon_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/search_icon" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/booking_field_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout_from_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/yellow_micar"
+                    android:padding="@dimen/field_padding" >
+
+                    <ImageView
+                        android:id="@+id/imageview_from_date"
+                        style="@style/field_icon_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/calendar_icon" />
+
+                    <com.micar.component.TextViewCustom
+                        android:id="@+id/textView_from_date"
+                        style="@style/drawer_row_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageview_from_date"
+                        android:background="@color/white"
+                        android:padding="10dp"
+                        android:text="dfjlfjldj" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_from_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:background="@color/yellow_micar"
+                    android:padding="@dimen/field_padding" >
+
+                    <ImageView
+                        android:id="@+id/imageview_from_time"
+                        style="@style/field_icon_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/time_icon" />
+
+                    <com.micar.component.TextViewCustom
+                        android:id="@+id/textView_from_time"
+                        style="@style/drawer_row_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageview_from_time"
+                        android:background="@color/white"
+                        android:padding="10dp"
+                        android:text="dfjlfjl" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/booking_field_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout_to_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/yellow_micar"
+                    android:padding="@dimen/field_padding" >
+
+                    <ImageView
+                        android:id="@+id/imageview_to_date"
+                        style="@style/field_icon_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/calendar_icon" />
+
+                    <com.micar.component.TextViewCustom
+                        android:id="@+id/textView_to_date"
+                        style="@style/drawer_row_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageview_to_date"
+                        android:background="@color/white"
+                        android:padding="10dp"
+                        android:text="dfjlfjldj" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout_to_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:background="@color/yellow_micar"
+                    android:padding="@dimen/field_padding" >
+
+                    <ImageView
+                        android:id="@+id/imageview_to_time"
+                        style="@style/field_icon_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/time_icon" />
+
+                    <com.micar.component.TextViewCustom
+                        android:id="@+id/textView_to_time"
+                        style="@style/drawer_row_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageview_to_time"
+                        android:background="@color/white"
+                        android:padding="10dp"
+                        android:text="dfjlfjldj" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                style="@style/booking_field_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.micar.component.CheckBoxCustom
+                    android:id="@+id/checkbox_picup"
+                    style="@style/pick_up_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/checkbox"
+                    android:drawablePadding="5dp"
+                    android:text="@string/pick_up" />
+
+                <!-- android:button="@drawable/checkbox" -->
+
+                <com.micar.component.CheckBoxCustom
+                    android:id="@+id/checkbox_delivery"
+                    style="@style/pick_up_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/checkbox"
+                    android:drawablePadding="5dp"
+                    android:text="@string/delivery" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/booking_field_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/booking_field_vertical_margin"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.micar.component.ButtonCustom
+                    android:id="@+id/btn_find_car"
+                    style="@style/find_car_btn_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_btn"
+                    android:text="@string/find_car" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/drawer_item_bg"
+    style="@style/accessories_row_style"
+    android:orientation="vertical" >
+
+    <com.micar.component.TextViewCustom
+        android:id="@+id/txtview_accessories"
+        style="@style/accessories_heading_txt_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/checkbox_accessories"
+        android:text="Music System" />
+
+    <com.micar.component.CheckBoxCustom
+        android:id="@+id/checkbox_accessories"
+        style="@style/accessories_normal_txt_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:button="@null"
+        android:drawableLeft="@drawable/checkbox"
+        android:drawablePadding="5dp"
+        android:focusable="false"
+        android:text="  " />
+
+</RelativeLayout>

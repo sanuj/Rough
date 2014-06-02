@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linear_lyt_navbar"
+        style="@style/navigation_bar_style"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.micar.component.TextViewCustom
+            style="@style/navbar_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_search"
+        style="@style/search_image_style"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/linear_lyt_navbar"
+        android:layout_gravity="center"
+        android:background="@android:drawable/edit_text"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageview_search_pics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/search" />
+
+        <com.micar.component.EditTextCustom
+            android:id="@+id/editext_Search"
+            style="@style/edittext_search_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/transparent_edit_text_bg"
+            android:paddingLeft="5dip" />
+
+        <ImageView
+            android:id="@+id/imageview_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/cancel"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_invite"
+        android:layout_below="@+id/linear_layout_search"
+        android:divider="@color/black"
+        android:dividerHeight="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        android:visibility="visible" >
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:divider="@color/black"
+        android:visibility="gone" />
+
+    <com.micar.component.ButtonCustom
+        android:id="@+id/button_invite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/login_btn"
+        android:text="@string/Invites" />
+
+</RelativeLayout>
